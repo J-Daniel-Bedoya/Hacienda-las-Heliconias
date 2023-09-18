@@ -5,7 +5,8 @@ export const pruebaSlice = createSlice({
   initialState: '',
   reducers: {
     setPrueba: (state, actions: PayloadAction<string>) => {
-        return actions.payload
+      state = actions.payload
+      return state
     }
   }
 })
