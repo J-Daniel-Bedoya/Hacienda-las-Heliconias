@@ -45,10 +45,10 @@
 
     & .active {
       width: 15rem;
-      height: auto;
+      height: 100%;
       background-color: variables.$cl-white;
       padding-bottom: 2rem;
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
     }
@@ -57,7 +57,7 @@
       flex-direction: column;
       align-items: center;
       gap: 2rem;
-      box-shadow: 4px 0 15px variables.$cl-shadow;
+      box-shadow: 4px 0 15px #8a8989;
 
       &--close {
         width: 100%;
