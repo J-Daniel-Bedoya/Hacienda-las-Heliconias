@@ -45,7 +45,7 @@
 
     & .active {
       width: 15rem;
-      height: 100%;
+      height: auto;
       background-color: variables.$cl-white;
       padding-bottom: 2rem;
       position: fixed;
@@ -88,6 +88,14 @@
     }
     & .inActive {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-height: 470px) {
+  .navbar {
+    & .active {
+      position: absolute;
     }
   }
 }
