@@ -1,0 +1,21 @@
+@use "./components/navbar/Navbar";
+@use "./components/footer/Footer";
+@use "./pages/About";
+@use "./pages/Accommodation.scss";
+@use "./pages/Activities.scss";
+@use "./pages/Events.scss";
+@use "./pages/Home.scss";
+@use "./pages/Services.scss";
+@use "./pages/Vip.scss";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.app {
+  width: 100vw;
+  height: auto;
+  // background-color: aqua;
+}

@@ -1,0 +1,25 @@
+@use "../../../../variables/variables";
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    &__logo {
+      padding-left: 3rem;
+    }
+    &__container,
+    .inActive {
+      padding-right: 4rem;
+
+      &--link {
+        & > .link {
+          font-size: 16px;
+          &:hover {
+            border-bottom: 1px solid variables.$cl-second1;
+          }
+        }
+      }
+      & .icon > i {
+        font-size: 30px;
+      }
+    }
+  }
+}

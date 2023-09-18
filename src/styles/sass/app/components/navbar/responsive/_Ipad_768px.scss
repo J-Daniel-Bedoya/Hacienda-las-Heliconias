@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar {
+    &__logo {
+      padding-left: 3rem;
+    }
+    & .inActive {
+      display: block;
+    }
+
+    &__container,
+    .inActive {
+      width: max-content;
+      height: 100%;
+      box-shadow: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0 2rem;
+
+      &--close {
+        display: none;
+      }
+      &--link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+
+        & > .link {
+          font-size: 13px;
+          transition: 0.2s;
+        }
+      }
+      & .icon > i {
+        font-size: 23px;
+      }
+    }
+  }
+}

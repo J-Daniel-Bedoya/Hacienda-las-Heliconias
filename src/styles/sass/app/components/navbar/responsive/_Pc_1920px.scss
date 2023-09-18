@@ -1,0 +1,10 @@
+@media screen and (min-width: 1920px) {
+  .navbar {
+    &__container,
+    .inActive {
+      & .icon > i {
+        font-size: 40px;
+      }
+    }
+  }
+}
