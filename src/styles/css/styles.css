@@ -39,7 +39,7 @@
   }
   .navbar .active {
     width: 15rem;
-    height: 100%;
+    height: max-content;
     background-color: #fff;
     position: absolute;
     top: 0;
