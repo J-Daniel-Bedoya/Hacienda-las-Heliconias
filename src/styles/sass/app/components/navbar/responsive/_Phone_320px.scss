@@ -48,9 +48,6 @@
       height: auto;
       background-color: variables.$cl-white;
       padding-bottom: 2rem;
-      position: fixed;
-      top: 0;
-      right: 0;
     }
     &__container {
       display: flex;
@@ -93,9 +90,17 @@
 }
 
 @media screen and (max-height: 470px) {
-  .navbar {
-    & .active {
-      position: absolute;
-    }
+  .active {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media screen and (min-height: 471px) {
+  .active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
 }
