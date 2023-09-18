@@ -45,8 +45,9 @@
 
     & .active {
       width: 15rem;
-      height: max-content;
+      height: auto;
       background-color: variables.$cl-white;
+      padding-bottom: 2rem;
       position: absolute;
       top: 0;
       right: 0;
@@ -76,7 +77,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 3rem;
+        gap: 2rem;
 
         & > .link {
           text-decoration: none;
