@@ -1,3 +1,6 @@
+@use "../../../../variables/variables";
+@use "../../../../mixins/mixins.scss";
+
 @media screen and (min-width: 768px) {
   .navbar__menu {
     display: none;
@@ -15,9 +18,7 @@
       width: max-content;
       height: 100%;
       box-shadow: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      @include mixins.flex(center);
       gap: 0.5rem;
       padding: 0 2rem;
 
@@ -25,10 +26,7 @@
         display: none;
       }
       &--link {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include mixins.flex(center, center);
         gap: 2rem;
         font-family: Arial, Helvetica, sans-serif;
 

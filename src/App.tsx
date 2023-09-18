@@ -11,7 +11,7 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className="app">
+    <div className="app w-screen h-screen">
       <HashRouter>
         <Navbar />
         <Routes>
