@@ -39,7 +39,7 @@ const ServicesSection = () => {
       <h2 className="text-center text-xl font-bold">¡Prueba nuestros menus!</h2>
       <div className="w-full h-auto my-12 grid grid-cols-2 gap-4">
         {menus.map((menu, index) => (
-          <div key={index} className="w-full h-40 shadow-md">
+          <div key={index} className="w-full h-52 shadow-md">
             <div className="w-full h-1/2 flex justify-center items-center bg-slate-300">
               <img className="w-1/2" src={menu.img} alt="menu" />
             </div>
