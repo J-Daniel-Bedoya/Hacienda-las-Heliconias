@@ -10,7 +10,6 @@ const Navbar = () => {
 
   const rutas = [
     "Vip",
-    "",
     "about",
     "services",
     "accommodation",
@@ -20,12 +19,11 @@ const Navbar = () => {
   const links = [
     // <i className="fa-regular fa-circle-user"></i>,
     "VIP",
-    "Home",
-    "Abous Us",
-    "Services",
-    "Accommodation",
-    "Activities",
-    "Events",
+    "Nosotros",
+    "Servicios",
+    "Alojamiento",
+    "Actividades",
+    "Eventos",
   ];
 
   const active = (valor: number, active: boolean) => {
@@ -33,16 +31,19 @@ const Navbar = () => {
     setDeploy(active);
   };
 
-  const vip = (vip: string) => {
+  const vipRouete = (vip: string) => {
     navigate(vip);
     setIsActive(links.length - 1);
+  };
+  const homeRoute = () => {
+    navigate("/");
   };
   console.log(isActive);
 
   return (
     <header className="navbar">
       <div className="navbar__logo">
-        <div className="navbar__logo--img">
+        <div className="navbar__logo--img" onClick={() => homeRoute()}>
           <img src={logo} alt="logo" />
         </div>
       </div>
@@ -71,7 +72,7 @@ const Navbar = () => {
           ))}
         </ul>
         {!deploy && (
-          <button className="icon" onClick={() => vip("/vip")}>
+          <button className="icon" onClick={() => vipRouete("/vip")}>
             <i className="fa-regular fa-circle-user"></i>
           </button>
         )}
