@@ -40,24 +40,24 @@ const Navbar = () => {
   console.log(isActive);
 
   return (
-    <div className="navbar">
+    <header className="navbar">
       <div className="navbar__logo">
         <div className="navbar__logo--img">
           <img src={logo} alt="logo" />
         </div>
       </div>
-      <div className="navbar__menu" onClick={() => setDeploy(!deploy)}>
+      <button className="navbar__menu" onClick={() => setDeploy(!deploy)}>
         <i className="fa-solid fa-bars"></i>
-      </div>
+      </button>
 
-      <div className={`navbar__container ${deploy ? "active" : "inActive"}`}>
-        <div
+      <nav className={`navbar__container ${deploy ? "active" : "inActive"}`}>
+        <button
           className="navbar__container--close"
           onClick={() => setDeploy(!deploy)}
         >
           <i className="fa-regular fa-circle-xmark"></i>
-        </div>
-        <div className="navbar__container--link">
+        </button>
+        <ul className="navbar__container--link">
           {rutas.map((item: string, i: number) => (
             <Link
               onClick={() => active(i, false)}
@@ -69,14 +69,14 @@ const Navbar = () => {
               {deploy ? links[i] : links[i + 1]}
             </Link>
           ))}
-        </div>
+        </ul>
         {!deploy && (
-          <div className="icon" onClick={() => vip("/vip")}>
+          <button className="icon" onClick={() => vip("/vip")}>
             <i className="fa-regular fa-circle-user"></i>
-          </div>
+          </button>
         )}
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 
