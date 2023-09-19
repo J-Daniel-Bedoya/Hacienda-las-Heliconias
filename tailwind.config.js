@@ -14,9 +14,7 @@ export default {
         pink: "#FF549A",
         shadow:  '#e7e8e7',
       },
-      width: {
-        wc: '48%'
-      }
+
     },
   },
   plugins: [],

@@ -35,11 +35,11 @@ const ActivitiesSection = () => {
           Actividades inolvidables
         </h2>
       </div>
-      <article className="ativitiesSec__section w-full h-auto flex justify-between gap-x-2 gap-y-4 flex-wrap">
+      <article className="ativitiesSec__section w-full h-auto grid grid-cols-2 gap-6 px-2">
         {arrActivities.map((card, index) => (
           <div
             key={index}
-            className="ativitiesSec__section--card w-wc h-44 shadow-lg"
+            className="ativitiesSec__section--card h-44 shadow-lg"
           >
             <div className="head__img w-full h-1/2 bg-slate-200 flex justify-center items-center">
               <img
