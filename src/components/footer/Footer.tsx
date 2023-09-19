@@ -23,11 +23,11 @@ const Footer = () => {
             <p className="text-base font-medium">Páginas</p>
             <div className="text-sm font-medium px-2 mt-2">
               <Link to={`/accommodation`}>Alojamiento</Link>
-              <p>Actividades</p>
-              <p>Servicios</p>
-              <p>Eventos</p>
-              <p>Nosotros</p>
-              <p>Pasate a vip</p>
+              <Link to={`/activities`}>Actividades</Link>
+              <Link to={`/services`}>Servicios</Link>
+              <Link to={`/events`}>Eventos</Link>
+              <Link to={`/about`}>Nosotros</Link>
+              <Link to={`/vip`}>Pasate a vip</Link>
             </div>
           </div>
           <div className="flex gap-2 flex-wrap">
