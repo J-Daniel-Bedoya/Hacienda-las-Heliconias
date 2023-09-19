@@ -87,6 +87,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 5;
   }
 }
 @media screen and (min-height: 471px) {
@@ -95,5 +96,6 @@
     top: 0;
     right: 0;
     bottom: 0;
+    z-index: 5;
   }
 }

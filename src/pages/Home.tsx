@@ -6,7 +6,7 @@ import Ported from "../components/home/Ported";
 
 const Home = () => {
   return (
-    <main className="home w-full min-h-screen ">
+    <main className="home w-full min-h-screen z-0">
       <Ported />
       <ActivitiesSection />
       <AccommodationSection />
