@@ -11,9 +11,9 @@ const Footer = () => {
 
   return (
     <footer className="footer w-full h-auto p-4 bg-slate-300 grid grid-cols-5">
-      <div className="w-12 col-start-1 col-end-2">
+      <Link to={`/`} className="w-12 col-start-1 col-end-2">
         <img className="" src={logo} alt="" />
-      </div>
+      </Link>
       <div className="col-start-2 col-end-6 grid-rows-2">
         <div className="row-start-1 row-end-2">
           <h2 className="text-center font-bold ">Hacienda las Heliconias</h2>
