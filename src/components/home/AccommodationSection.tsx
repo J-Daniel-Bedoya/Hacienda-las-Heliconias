@@ -10,28 +10,33 @@ const AccommodationSection = () => {
       img: imgCasas,
       description: "Y disfruta de lo mejor de relajantes y hermosos paisajes",
     },
+    {
+      img: imgCasas,
+      description: "Y disfruta de lo mejor de relajantes y hermosos paisajes",
+    },
+    {
+      img: imgCasas,
+      description: "Y disfruta de lo mejor de relajantes y hermosos paisajes",
+    },
   ];
 
   return (
-    <section className="w-full h-auto px-4 mb-12">
-      <h2 className="text-center text-xl font-bold">
+    <section className="w-full h-full px-4 my-32">
+      <h2 className="text-center text-xl font-bold xs:text-2xl">
         Conecta con la naturaleza
       </h2>
-      <article className="w-full h-full mt-12 flex flex-col justify-between gap-8">
+      <article className="w-full h-full mt-12 grid grid-cols-2 gap-4 xs:px-2 xs2:px-4 xs2:gap-6 sm:px-6">
         {casas.map((casa, index) => (
-          <div key={index} className="w-full h-32 grid grid-cols-2 gap-x-4">
-            <div className=" h-full flex justify-center items-center bg-slate-300">
-              <img className="w-1/2" src={casa.img} alt="img" />
+          <div
+            key={index}
+            className="w-full h-full relative sm:h-48 bg-orange flex justify-center"
+          >
+            <div className="w-full h-36 flex flex-col items-center gap-8 bg-slate-300 sm:h-full">
+              <img className="w-1/3 " src={casa.img} alt="accommodation" />
             </div>
-            <div
-              className={`${
-                index % 2 === 0
-                  ? "row-start-1 row-end-2 col-start-2 col-end-3"
-                  : "row-start-1 row-end-2 col-start-1 col-end-2"
-              } flex justify-center items-center p-4`}
-            >
-              <p className="text-xs text-center">{casa.description}</p>
-            </div>
+            <p className="text-xs text-center absolute bottom-4">
+              {casa.description}
+            </p>
           </div>
         ))}
       </article>

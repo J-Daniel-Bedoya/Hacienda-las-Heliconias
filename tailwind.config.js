@@ -14,7 +14,10 @@ export default {
         pink: "#FF549A",
         shadow:  '#e7e8e7',
       },
-
+      screens: {
+        xs: '420px',
+        xs2: '558px'
+      }
     },
   },
   plugins: [],
