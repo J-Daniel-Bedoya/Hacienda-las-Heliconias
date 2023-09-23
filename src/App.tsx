@@ -14,16 +14,18 @@ function App() {
     <div className="app w-screen h-screen">
       <HashRouter>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
 
-          <Route path="/activities" element={<Activities />}></Route>
-          <Route path="/services" element={<Services />}></Route>
-          <Route path="/accommodation" element={<Accommodation />}></Route>
-          <Route path="/about" element={<AboutUs />}></Route>
-          <Route path="/events" element={<Events />}></Route>
-          <Route path="/vip" element={<Vip />}></Route>
-        </Routes>
+            <Route path="/activities" element={<Activities />}></Route>
+            <Route path="/services" element={<Services />}></Route>
+            <Route path="/accommodation" element={<Accommodation />}></Route>
+            <Route path="/about" element={<AboutUs />}></Route>
+            <Route path="/events" element={<Events />}></Route>
+            <Route path="/vip" element={<Vip />}></Route>
+          </Routes>
+        </main>
         <Footer />
       </HashRouter>
     </div>

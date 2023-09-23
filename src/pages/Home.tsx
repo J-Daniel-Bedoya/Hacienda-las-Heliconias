@@ -6,13 +6,13 @@ import Ported from "../components/home/Ported";
 
 const Home = () => {
   return (
-    <main className="home w-full min-h-screen z-0">
+    <section className="w-full h-auto mt-20">
       <Ported />
       <ActivitiesSection />
       <AccommodationSection />
       <ServicesSection />
       <AboutSection />
-    </main>
+    </section>
   );
 };
 

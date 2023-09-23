@@ -1,8 +1,8 @@
 const Activities = () => {
   return (
-    <div>
+    <section className="w-screen h-screen mt-20">
       <h1>I am Activities</h1>
-    </div>
+    </section>
   );
 };
 

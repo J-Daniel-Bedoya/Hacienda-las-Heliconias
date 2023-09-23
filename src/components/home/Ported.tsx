@@ -1,13 +1,24 @@
-import imgWhite from "../../assets/img/library-management.png";
+import imgWhite from "../../assets/img/hacienda1.jpg";
 
 const Ported = () => {
   return (
-    <section className="home__ported w-full h-60 bg-slate-200 flex flex-col justify-center items-center relative xs:h-72 xs2:h-80 sm:h-96">
-      <img className="home__ported--img w-32 h-32" src={`${imgWhite}`} alt="" />
-      <button className="home__ported--button w-max h-max px-3 py-1 bg-green text-white absolute bottom-4 text-sm xs:text-base">
-        Descubre nuestra receta!
-      </button>
-    </section>
+    <article className="w-full grid grid-cols-1 gap-y-4 p-4 md:grid-cols-2 md:p-16">
+      <div className="w-full h-max flex flex-col relative  p-4 md:px-12 md:py-16">
+        <p className="text-lg font-bold md:text-4xl">
+          ¿En busca de nuevas experiencias? ¡Hacienda las Heliconias tiene la
+          receta perfecta!
+        </p>
+        <br />
+        <button className="absolute left-4 px-2 py-1 font-bold md:left-12 bottom-0 bg-green text-white">
+          ¡Descubrela ahora!
+        </button>
+      </div>
+      <img
+        className="w-full h-full shadow-xl"
+        src={`${imgWhite}`}
+        alt="hacienda"
+      />
+    </article>
   );
 };
 

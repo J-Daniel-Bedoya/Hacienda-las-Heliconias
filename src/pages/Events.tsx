@@ -1,8 +1,8 @@
 const Events = () => {
   return (
-    <div>
+    <section className="w-screen h-screen mt-20">
       <h1>I am Events</h1>
-    </div>
+    </section>
   );
 };
 

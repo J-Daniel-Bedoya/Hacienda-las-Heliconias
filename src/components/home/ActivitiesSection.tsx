@@ -1,4 +1,4 @@
-import activities from "../../assets/img/library-management.png";
+import activities from "../../assets/img/hacienda1.jpg";
 
 const ActivitiesSection = () => {
   const arrActivities = [
@@ -29,37 +29,34 @@ const ActivitiesSection = () => {
   ];
 
   return (
-    <section className="ativitiesSec w-full h-auto my-32 flex flex-col justify-center px-4">
-      <div className="ativitiesSec__title w-full mb-12">
-        <h2 className="text-center font-bold text-xl  xs:text-2xl xs2:text-3xl">
+    <article className="w-full h-auto my-32 flex flex-col justify-center px-4">
+      <div className="w-full mb-12">
+        <h2 className="text-center font-bold text-xl  xs:text-2xl xs2:text-4xl">
           Actividades inolvidables
         </h2>
       </div>
-      <article className="ativitiesSec__section w-full h-auto grid grid-cols-2 gap-4 xs:px-2 xs:gap-6 xs2:px-4 xs2:gap-8 sm:px-6 ">
+      <div className="w-full h-auto mt-16 grid auto-rows-[20rem] grid-cols-[repeat(auto-fit,_minmax(12rem,_1fr))] gap-8 md:px-16 ">
         {arrActivities.map((card, index) => (
-          <div
-            key={index}
-            className="ativitiesSec__section--card shadow-lg h-44 xs:h-52 xs2:h-60 sm:h-80"
-          >
-            <div className="head__img w-full h-3/5 sm:h-2/3 bg-slate-200 flex justify-center items-center">
+          <div key={index} className="w-full h-full shadow-lg">
+            <div className=" w-full h-3/5 sm:h-2/3 bg-slate-200 flex justify-center items-center">
               <img
-                className="w-1/3"
+                className="w-full h-full"
                 src={card.img}
                 alt={card.title.toLowerCase()}
               />
             </div>
-            <div className="body w-full h-2/5 sm:h-1/3 p-1 relative ">
-              <div className="body__title text-center">
-                <h3 className="text-sm font-bold xs2:text-lg">{card.title}</h3>
+            <div className="w-full h-2/5 sm:h-1/3 p-1 relative flex flex-col justify-center items-center ">
+              <div className="text-center">
+                <h3 className="text-lg font-bold xs2:text-lg">{card.title}</h3>
               </div>
-              <div className="body__description mt-2 font-medium text-xs text-center xs2:text-base">
+              <div className="mt-2 font-medium text-sm text-center xs2:text-base">
                 <p>{card.description}</p>
               </div>
             </div>
           </div>
         ))}
-      </article>
-    </section>
+      </div>
+    </article>
   );
 };
 

@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/img/logoHaciendaSvg1.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   //
@@ -9,22 +9,30 @@ const Navbar = () => {
   const [deploy, setDeploy] = useState(false);
 
   const rutas = [
-    "Vip",
-    "about",
-    "services",
-    "accommodation",
+    "/",
     "activities",
+    "accommodation",
+    "services",
     "events",
+    "about",
+    "Vip",
   ];
   const links = [
-    // <i className="fa-regular fa-circle-user"></i>,
-    "VIP",
-    "Nosotros",
-    "Servicios",
-    "Alojamiento",
+    "Home",
     "Actividades",
+    "Alojamiento",
+    "Servicios",
     "Eventos",
+    "Nosotros",
+    "VIP",
   ];
+
+  useEffect(() => {
+    if (isActive === 0) {
+      navigate("/");
+      setIsActive(1);
+    }
+  }, []);
 
   const active = (valor: number, active: boolean) => {
     setIsActive(valor);
@@ -37,11 +45,12 @@ const Navbar = () => {
   };
   const homeRoute = () => {
     navigate("/");
+    setIsActive(1);
   };
   console.log(isActive);
 
   return (
-    <header className="navbar">
+    <header className="navbar fixed bg-white z-10">
       <div className="navbar__logo">
         <div className="navbar__logo--img" onClick={() => homeRoute()}>
           <img src={logo} alt="logo" />
@@ -51,7 +60,10 @@ const Navbar = () => {
         <i className="fa-solid fa-bars"></i>
       </button>
 
-      <nav className={`navbar__container ${deploy ? "active" : "inActive"}`}>
+      <nav
+        className={`navbar__container ${deploy ? "active" : "inActive"}`}
+        onClick={() => setDeploy(false)}
+      >
         <button
           className="navbar__container--close"
           onClick={() => setDeploy(!deploy)}
@@ -65,9 +77,9 @@ const Navbar = () => {
               className="link "
               style={{ color: isActive === i ? "#ff9021" : "#058b3d" }}
               key={i}
-              to={deploy ? `/${item}` : `/${rutas[i + 1]}`}
+              to={deploy ? `/${item}` : `/${rutas[i - 1]}`}
             >
-              {deploy ? links[i] : links[i + 1]}
+              {deploy ? links[i] : links[i - 1]}
             </Link>
           ))}
         </ul>

@@ -1,4 +1,4 @@
-import imgNosotros from "../../assets/img/library-management.png";
+import imgNosotros from "../../assets/img/hacienda1.jpg";
 
 const AboutSection = () => {
   const nosotros = [
@@ -21,33 +21,35 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="w-full h-auto px-4 mb-40">
-      <h2 className="text-center text-xl font-bold xs:text-2xl">
+    <article className="w-full h-auto px-4 mb-40">
+      <h2 className="text-center text-xl font-bold xs:text-4xl">
         Sobre Nosotros
       </h2>
 
-      <article className="w-full h-auto mt-12 flex flex-col gap-4 xs:px-2 xs:gap-6">
+      <div className="w-full h-auto mt-28 flex flex-col  gap-8 px-4 md:px-16">
         {nosotros.map((info, index) => (
           <div
             key={index}
-            className="grid grid-cols-2 gap-x-4 py-2 place-items-center"
+            className="grid grid-cols-2 gap-x-4 py-2 place-items-center "
           >
-            <div className="w-full h-32 flex justify-center items-center bg-slate-300 xs:h-40 xs2:h-48">
-              <img className="w-1/3 " src={info.img} alt={info.img} />
+            <div className="w-full h-auto flex justify-center items-center lg:p-16">
+              <img className="w-full h-full" src={info.img} alt={info.img} />
             </div>
             <div
               className={`${
                 index % 2 === 0
                   ? " col-start-2 col-end-3"
                   : "row-start-1 row-end-2 col-start-1 col-end-2"
-              } flex justify-center items-center`}
+              } flex justify-center items-center lg:p-16`}
             >
-              <p className="text-xs xs:text-sm xs2:text-base">{info.text}</p>
+              <p className="text-xs xs:text-sm xs2:text-base lg:text-xl xl:text-2xl">
+                {info.text}
+              </p>
             </div>
           </div>
         ))}
-      </article>
-    </section>
+      </div>
+    </article>
   );
 };
 

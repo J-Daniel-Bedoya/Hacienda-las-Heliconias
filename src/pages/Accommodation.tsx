@@ -1,8 +1,8 @@
 const Accommodation = () => {
   return (
-    <div>
+    <section className="w-screen h-screen mt-20">
       <h1>I am Accommodation</h1>
-    </div>
+    </section>
   );
 };
 

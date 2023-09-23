@@ -1,4 +1,4 @@
-import imgCasas from "../../assets/img/library-management.png";
+import imgCasas from "../../assets/img/hacienda1.jpg";
 
 const AccommodationSection = () => {
   const casas = [
@@ -21,27 +21,32 @@ const AccommodationSection = () => {
   ];
 
   return (
-    <section className="w-full h-full px-4 my-32">
-      <h2 className="text-center text-xl font-bold xs:text-2xl">
+    <article className="w-full h-full px-4 my-32">
+      <h2 className="text-center text-xl font-bold xs:text-4xl">
         Conecta con la naturaleza
       </h2>
-      <article className="w-full h-full mt-12 grid grid-cols-2 gap-4 xs:px-2 xs2:px-4 xs2:gap-6 sm:px-6">
+      <div className="w-full h-full mt-28 grid auto-rows-[25rem] grid-cols-[repeat(auto-fit,_minmax(15rem,_1fr))] gap-8 px-4 md:px-16">
         {casas.map((casa, index) => (
           <div
             key={index}
-            className="w-full h-full relative sm:h-48 bg-orange flex justify-center"
+            className="w-full h-full relative bg-orange flex justify-center"
           >
-            <div className="w-full h-36 flex flex-col items-center gap-8 bg-slate-300 sm:h-full">
-              <img className="w-1/3 " src={casa.img} alt="accommodation" />
+            <div className="w-full h-full flex flex-col items-center gap-8 shadow-xl">
+              <img
+                className="w-full h-full "
+                src={casa.img}
+                alt="accommodation"
+              />
             </div>
             <p className="text-xs text-center absolute bottom-4">
               {casa.description}
             </p>
           </div>
         ))}
-      </article>
-    </section>
+      </div>
+    </article>
   );
 };
 
 export default AccommodationSection;
+// xs:px-2 xs2:px-4 xs2:gap-6 sm:px-6

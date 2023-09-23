@@ -43,6 +43,7 @@
       height: auto;
       background-color: variables.$white;
       padding-bottom: 2rem;
+      animation: entry 0.4s;
     }
     &__container {
       @include mixins.flex(l, center, column);
@@ -79,6 +80,15 @@
     & .inActive {
       display: none;
     }
+  }
+}
+
+@keyframes entry {
+  100% {
+    transform: translateX(0%);
+  }
+  0% {
+    transform: translateX(100%);
   }
 }
 

@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className="row-start-2 row-end-3 grid grid-cols-2 mt-8 gap-x-4">
           <div>
-            <p className="text-base font-medium">Páginas</p>
+            <p className="text-base font-bold">Páginas</p>
             <div className="text-sm font-medium px-2 mt-2 flex flex-col">
               <Link to={`/accommodation`}>Alojamiento</Link>
               <Link to={`/activities`}>Actividades</Link>
