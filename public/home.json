@@ -20,45 +20,45 @@
     "houses": [
         {
             "img": "imgHouses",
-            "description": "¡Alójate en algunas de nuestras casas campesinas!"
+            "description": "Pasa días increibles en nuestras casas campesinas"
         },
         {
             "img": "imgHouses",
-            "description": "Y disfruta de lo mejor de relajantes y hermosos paisajes"
+            "description": "Disfruta de hermosos paisajes y relajantes espacios"
         },
         {
             "img": "imgHouses",
-            "description": "Y disfruta de lo mejor de relajantes y hermosos paisajes"
+            "description": "Llevate recuerdos increibles y momentos memorables"
         },
         {
             "img": "imgHouses",
-            "description": "Y disfruta de lo mejor de relajantes y hermosos paisajes"
+            "description": "Un lugar para desconectarse y disfrutar de la vida"
         }
     ],
     "activities": [
         {
             "img": "activities",
-            "description": "Pasa un emocionante día de sol",
+            "description": "Diviertete y relajate",
             "price": 10000,
             "title": "Piscina"
         },
         {
             "img": "activities",
-            "description": "Prueba suerte en nuestros estanques",
+            "description": "Prueba suerte pescando",
             "price": 10000,
-            "title": "Piscina"
+            "title": "Zona de Pesca"
         },
         {
             "img": "activities",
-            "description": "Pasa noches relajantes y divertidas",
+            "description": "Pasa noches agradables",
             "price": 10000,
-            "title": "Piscina"
+            "title": "Camping"
         },
         {
             "img": "activities",
-            "description": "Pasa momentos agradables en familia",
+            "description": "Observa de cerca la naturaleza",
             "price": 10000,
-            "title": "Piscina"
+            "title": "Senderísmo"
         }
     ],
     "menus": [

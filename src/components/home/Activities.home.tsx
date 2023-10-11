@@ -13,28 +13,30 @@ const ActivitiesHome = () => {
   }
 
   return (
-    <article className="home__activities">
-      <div className="home__activities--title">
-        <h2 className="">Actividades inolvidables</h2>
-      </div>
-      <div className="home__activities--cards">
-        {activities.map((activity: Activity, index: number) => (
-          <div key={index} className="activitiesCard">
-            <div className="activitiesCard__img">
-              <img src={imgActivities} alt={activity.title.toLowerCase()} />
-            </div>
-            <div className="activitiesCard__info">
-              <div className="activitiesCard__info--title">
-                <h3 className="">{activity.title}</h3>
+    <div className="background background-activities">
+      <section className="home__container">
+        <div className="home__container--title">
+          <h2 className="">Actividades inolvidables</h2>
+        </div>
+        <div className="home__container--cards">
+          {activities.map((activity: Activity, index: number) => (
+            <div key={index} className="card">
+              <div className="card__img">
+                <img src={imgActivities} alt={activity.title.toLowerCase()} />
               </div>
-              <div className="activitiesCard__info--text">
-                <p>{activity.description}</p>
+              <div className="card__info">
+                <div className="card__info--title">
+                  <h3>{activity.title}</h3>
+                </div>
+                <div className="card__info--text">
+                  <p>{activity.description}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </article>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

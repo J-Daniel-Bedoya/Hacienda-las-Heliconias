@@ -1,2 +1,5 @@
 @media screen and (width >= 768px) {
+  .home__ported {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

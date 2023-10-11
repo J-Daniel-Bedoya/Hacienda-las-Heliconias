@@ -1,2 +1,15 @@
 @media screen and (width >= 768px) {
+  .home__activities {
+    &--cards {
+      & .activitiesCard {
+        &__info {
+        }
+
+        &__img {
+          & img {
+          }
+        }
+      }
+    }
+  }
 }

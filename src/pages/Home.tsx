@@ -7,13 +7,13 @@ import AboutHome from "../components/home/About.home";
 const Home = () => {
   return (
     <main className="home">
-      <div className="home__container">
-        <Ported />
-        <ActivitiesHome />
-        <AccommodationHome />
-        <ServicesHome />
-        <AboutHome />
-      </div>
+      {/* <div className="home__container"> */}
+      <Ported />
+      <ActivitiesHome />
+      <AccommodationHome />
+      <ServicesHome />
+      <AboutHome />
+      {/* </div> */}
     </main>
   );
 };

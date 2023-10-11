@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer__container--info">
           <LinksFooter />
           <NetworksFooter />
-          <PrivacityFooter />
+          {/* <PrivacityFooter /> */}
         </div>
       </div>
     </footer>

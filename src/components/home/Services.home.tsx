@@ -4,24 +4,26 @@ import homeJson from "../../../public/home.json";
 
 const ServicesHome = () => {
   return (
-    <article className="home__services">
-      <div className="home__services--title">
-        <h2>¡Prueba nuestros menus!</h2>
-      </div>
-      <div className="home__services--cards">
-        {homeJson.menus.map((menu, index) => (
-          <div key={index} className="servicesHome">
-            <div className="servicesHome__img">
-              <img className="" src={imgMenus} alt="menu" />
+    <div className="background background-services">
+      <section className="home__container">
+        <div className="home__container--title">
+          <h2>¡Prueba nuestros menus!</h2>
+        </div>
+        <div className="home__container--cards">
+          {homeJson.menus.map((menu, index) => (
+            <div key={index} className="card">
+              <div className="card__img">
+                <img src={imgMenus} alt="menu" />
+              </div>
+              <div className="card__info">
+                <p>{menu.name}</p>
+                <button>{menu.price}</button>
+              </div>
             </div>
-            <div className="servicesHome__info">
-              <p>{menu.name}</p>
-              <button>{menu.price}</button>
-            </div>
-          </div>
-        ))}
-      </div>
-    </article>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

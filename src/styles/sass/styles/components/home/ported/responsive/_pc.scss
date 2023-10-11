@@ -1,2 +1,10 @@
 @media screen and (width >= 1500px) {
+  .home__ported {
+    width: 75rem;
+    &--info {
+    }
+    &--img {
+      padding: 0;
+    }
+  }
 }
