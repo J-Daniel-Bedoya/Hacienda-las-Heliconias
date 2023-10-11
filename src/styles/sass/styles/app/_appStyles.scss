@@ -1,0 +1,42 @@
+@use "../../variables/var";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.app {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100dvh;
+  font-family: var.$Open;
+}
+
+.logo__img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  & img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.navbar__hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+// .active {
+//   transform: translateY(0%);
+//   transition: transform 0.3s;
+// }
+// .inActive {
+//   transform: translateY(-100%);
+//   transition: transform 0.3s;
+// }

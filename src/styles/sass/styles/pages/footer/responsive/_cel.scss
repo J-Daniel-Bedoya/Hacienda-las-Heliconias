@@ -1,0 +1,18 @@
+@use "../../../../variables/var";
+
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    // &--info {
+    // }
+
+    &--img {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+}

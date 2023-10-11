@@ -1,6 +1,6 @@
 const Accommodation = () => {
   return (
-    <section className="w-screen h-screen mt-20">
+    <section className="accommodation">
       <h1>I am Accommodation</h1>
     </section>
   );

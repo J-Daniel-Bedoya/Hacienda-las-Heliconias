@@ -1,0 +1,68 @@
+@use "../../../../variables/var";
+@media screen and (width >= 768px) {
+  .navbar {
+    &__container {
+      width: 80rem;
+      flex-direction: row;
+      background-color: transparent;
+
+      &--bars {
+        display: none;
+      }
+
+      &--nav {
+        transition: transform 0.7s ease-in-out;
+      }
+      &--inActive {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 2rem;
+        transform: translateX(0%);
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        background: none;
+        overflow-y: hidden;
+
+        & .buttons {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+          //   padding-right: 0.2rem;
+
+          &__content {
+            width: max-content;
+            background: none;
+            padding-left: 0;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.1s;
+
+            &:hover {
+              color: var.$cl-second1;
+              //   transform: scale(1.05);
+            }
+          }
+          & .cuenta {
+            // padding-left: 1rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 100%;
+            padding: 0;
+            background-color: var.$cl-second2;
+            & > i {
+              color: var.$cl-primary4;
+            }
+            &:hover {
+              background-color: var.$cl-second3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <section className="w-screen h-screen mt-20">
+    <section className="services">
       <h1>I am Services</h1>
     </section>
   );

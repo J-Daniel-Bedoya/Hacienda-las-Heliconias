@@ -1,0 +1,50 @@
+@use "../../../../../variables/var";
+
+.home__activities {
+  width: 100%;
+  height: auto;
+  // background-color: rgb(218, 175, 175);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  &--cards {
+    // width: 100;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    place-items: center;
+    gap: 2rem;
+
+    & .activitiesCard {
+      width: 16rem;
+      height: 20rem;
+      border-radius: 5px;
+      // background-color: #1bc5ab;
+      outline: 1px solid #d9d7d7;
+      box-shadow: 0 2px 12px #d7d5d5;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      &__info {
+        width: 100%;
+        height: 100%;
+        padding: 0 1rem;
+        width: 100%;
+        height: 100%;
+      }
+
+      &__img {
+        width: 100%;
+        height: 100%;
+        & img {
+          border-radius: 5px 5px 0 0;
+          width: 100%;
+          height: 12rem;
+        }
+      }
+    }
+  }
+}

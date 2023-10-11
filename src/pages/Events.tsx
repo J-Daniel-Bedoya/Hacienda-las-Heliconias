@@ -1,6 +1,6 @@
 const Events = () => {
   return (
-    <section className="w-screen h-screen mt-20">
+    <section className="events">
       <h1>I am Events</h1>
     </section>
   );

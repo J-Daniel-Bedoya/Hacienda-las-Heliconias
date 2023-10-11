@@ -1,18 +1,20 @@
-import AboutSection from "../components/home/AboutSection";
-import AccommodationSection from "../components/home/AccommodationSection";
-import ActivitiesSection from "../components/home/ActivitiesSection";
-import ServicesSection from "../components/home/ServicesSection";
-import Ported from "../components/home/Ported";
+import Ported from "../components/home/Ported.home";
+import ActivitiesHome from "../components/home/Activities.home";
+import AccommodationHome from "../components/home/Accommodation.home";
+import ServicesHome from "../components/home/Services.home";
+import AboutHome from "../components/home/About.home";
 
 const Home = () => {
   return (
-    <section className="w-full h-auto mt-20">
-      <Ported />
-      <ActivitiesSection />
-      <AccommodationSection />
-      <ServicesSection />
-      <AboutSection />
-    </section>
+    <main className="home">
+      <div className="home__container">
+        <Ported />
+        <ActivitiesHome />
+        <AccommodationHome />
+        <ServicesHome />
+        <AboutHome />
+      </div>
+    </main>
   );
 };
 

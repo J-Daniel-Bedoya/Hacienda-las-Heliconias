@@ -1,9 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
-import pruebaSlice from './slices/prueba.slice'
+import isViewSlice from './slices/isView.slice'
 
+export type RootState = {
+  isView: {
+    isView: boolean,
+    isViewNav: boolean,
+  },
+};
 
 export default configureStore({
   reducer: {
-    prueba: pruebaSlice,
+    isView: isViewSlice,
   }
 })
