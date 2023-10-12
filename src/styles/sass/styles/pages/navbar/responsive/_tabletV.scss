@@ -40,7 +40,7 @@
             padding-left: 0;
             justify-content: center;
             cursor: pointer;
-            transition: 0.1s;
+            transition: 0.3s;
 
             &:hover {
               color: var.$cl-second1;
@@ -53,12 +53,13 @@
             height: 2.5rem;
             border-radius: 100%;
             padding: 0;
-            background-color: var.$cl-second2;
+            background-color: #e8fdf568;
+            transition: 0.3s;
             & > i {
-              color: var.$cl-primary4;
+              color: #fff;
             }
             &:hover {
-              background-color: var.$cl-second3;
+              background-color: #e5e5e5d1;
             }
           }
         }

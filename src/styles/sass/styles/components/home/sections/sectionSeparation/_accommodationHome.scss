@@ -1,0 +1,15 @@
+.background-accommodation {
+  & .home__container {
+    &--cards {
+      & .card {
+        &__info {
+          padding: 1rem 0rem 2rem 0rem;
+          & p {
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

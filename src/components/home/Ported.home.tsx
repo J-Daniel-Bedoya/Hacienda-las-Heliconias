@@ -5,9 +5,9 @@ const Ported = () => {
     <article className="home__ported">
       <div className="home__ported--info">
         <p className="info__text">
-          {/* ¿En busca de nuevas experiencias? ¡Hacienda las Heliconias tiene la
-          receta perfecta! */}
-          Hacienda las Heliconias
+          ¿En busca de nuevas experiencias? ¡Hacienda las Heliconias tiene la
+          receta perfecta!
+          {/* Hacienda las Heliconias */}
         </p>
         <button className="info__button">¡Descubrela ahora!</button>
       </div>

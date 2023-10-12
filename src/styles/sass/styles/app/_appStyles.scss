@@ -13,17 +13,32 @@
   font-family: var.$Open;
 }
 
-.logo__img {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.logo {
+  // background-color: #eccfcf;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 
-  & img {
+  &__img {
     width: 3rem;
     height: 3rem;
+    border-radius: 100%;
+    background-color: #e8fdf568;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    & img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  & p {
+    width: max-content;
+    color: #e8fdf5;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 }
 

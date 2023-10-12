@@ -8,13 +8,7 @@
   justify-content: center;
   align-items: center;
 }
-.background-activities,
-.background-services {
-  & h2 {
-    color: #000;
-  }
-  background: linear-gradient(to left, #f9fbd3, #c6fefc);
-}
+
 .home__container {
   width: 100%;
   height: auto;

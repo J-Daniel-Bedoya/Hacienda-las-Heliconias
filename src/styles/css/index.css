@@ -11,10 +11,17 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.logo {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
 .logo__img {
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
+  background-color: rgba(232, 253, 245, 0.4078431373);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -22,6 +29,12 @@
 .logo__img img {
   width: 3rem;
   height: 3rem;
+}
+.logo p {
+  width: max-content;
+  color: #e8fdf5;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .navbar__hidden {
@@ -119,7 +132,7 @@
   height: 2.5rem;
   padding-left: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -204,7 +217,7 @@
     padding-left: 0;
     justify-content: center;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.3s;
   }
   .navbar__container--inActive .buttons__content:hover {
     color: #fff86d;
@@ -214,13 +227,14 @@
     height: 2.5rem;
     border-radius: 100%;
     padding: 0;
-    background-color: #f4e91f;
+    background-color: rgba(232, 253, 245, 0.4078431373);
+    transition: 0.3s;
   }
   .navbar__container--inActive .buttons .cuenta > i {
-    color: #12a766;
+    color: #fff;
   }
   .navbar__container--inActive .buttons .cuenta:hover {
-    background-color: #e5da10;
+    background-color: rgba(229, 229, 229, 0.8196078431);
   }
 }
 @media screen and (width >= 1500px) {
@@ -241,26 +255,26 @@
 
 .home__ported {
   width: 100%;
-  height: 100dvh;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
   padding: 3rem 1rem;
-  gap: 2rem;
+  gap: 3rem;
 }
 .home__ported--info {
-  width: 20rem;
-  padding: 0 1rem;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .home__ported--info p {
   font-size: 1.5rem;
 }
 .home__ported--info button {
-  border-radius: 5px;
+  border-radius: 20px;
   width: 12rem;
   height: 2.5rem;
   border: none;
@@ -279,6 +293,12 @@
   .home__ported {
     grid-template-columns: repeat(2, 1fr);
   }
+  .home__ported--info {
+    padding: 12rem 0;
+  }
+  .home__ported--info p {
+    font-size: 2rem;
+  }
 }
 @media screen and (width >= 1500px) {
   .home__ported {
@@ -294,15 +314,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.background-activities,
-.background-services {
-  background: linear-gradient(to left, #f9fbd3, #c6fefc);
-}
-.background-activities h2,
-.background-services h2 {
-  color: #000;
 }
 
 .home__container {
@@ -370,6 +381,41 @@
     height: auto;
   }
 }
+.background-activities {
+  background: linear-gradient(to left, #f9fbd3, #c6fefc);
+}
+
+.background-accommodation .home__container--cards .card__info {
+  padding: 1rem 0rem 2rem 0rem;
+}
+.background-accommodation .home__container--cards .card__info p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.background-services {
+  background: linear-gradient(to left, #f9fbd3, #c6fefc);
+}
+.background-services .home__container--cards .card__info {
+  position: relative;
+  padding-bottom: 3rem;
+}
+.background-services .home__container--cards .card__info p {
+  font-weight: bold;
+}
+.background-services .home__container--cards .card__info button {
+  background-color: #08574c;
+  color: #fff;
+  border: none;
+  padding: 4px 15px;
+  border-radius: 20px;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .accommodation {
   margin-top: 5rem;
   width: 100%;
@@ -419,11 +465,11 @@
   padding: 2rem 0;
 }
 .footer__container .logo__img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
-  top: 5rem;
-  left: 5rem;
+  top: 4rem;
+  right: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -463,13 +509,15 @@
 }
 .footer__container--info .info__networks {
   position: absolute;
-  right: 10rem;
+  top: 10rem;
+  right: 3rem;
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 .footer__container--info .info__networks--link i {
   color: #05b29b;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 .footer__container--info .info__networks--link i:hover {
   color: #1be08b;
@@ -482,6 +530,26 @@
 @media screen and (width >= 768px) {
   .footer__container {
     width: 80rem;
+  }
+  .footer__container .logo__img {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__container--info .info__networks {
+    position: absolute;
+    right: 10rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .footer__container--info .info__networks--link i {
+    font-size: 3rem;
   }
 }
 

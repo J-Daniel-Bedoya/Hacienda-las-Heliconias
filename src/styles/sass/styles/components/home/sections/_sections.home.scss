@@ -3,3 +3,8 @@
 @use "./responsive/tabletH";
 @use "./responsive/pc";
 @use "./responsive/tv";
+
+@use "./sectionSeparation/activitiesHome";
+@use "./sectionSeparation/accommodationHome";
+@use "./sectionSeparation/servicesHome";
+@use "./sectionSeparation/aboutHome";

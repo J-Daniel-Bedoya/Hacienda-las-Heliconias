@@ -6,13 +6,16 @@ const LogoNav = () => {
   const navigate = useNavigate();
 
   return (
-    <div
-      className="logo__img"
-      onClick={() => navigate("/")}
-      style={{
-        backgroundImage: `url(${imgLogo})`,
-      }}
-    ></div>
+    <div className="logo">
+      <div
+        className="logo__img"
+        onClick={() => navigate("/")}
+        style={{
+          backgroundImage: `url(${imgLogo})`,
+        }}
+      ></div>
+      <p>HTLH</p>
+    </div>
   );
 };
 

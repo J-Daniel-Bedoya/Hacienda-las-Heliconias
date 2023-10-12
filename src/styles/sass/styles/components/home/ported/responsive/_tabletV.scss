@@ -1,5 +1,13 @@
 @media screen and (width >= 768px) {
   .home__ported {
     grid-template-columns: repeat(2, 1fr);
+
+    &--info {
+      padding: 12rem 0;
+      & p {
+        // text-align: center;
+        font-size: 2rem;
+      }
+    }
   }
 }

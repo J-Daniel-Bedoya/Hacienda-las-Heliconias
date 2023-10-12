@@ -2,6 +2,35 @@
   .footer {
     &__container {
       width: 80rem;
+
+      & .logo {
+        &__img {
+          width: 5rem;
+          height: 5rem;
+          position: absolute;
+          top: 5rem;
+          left: 5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &--info {
+        & .info__networks {
+          position: absolute;
+          right: 10rem;
+          display: flex;
+          flex-direction: row;
+          gap: 1.5rem;
+
+          &--link {
+            & i {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
     }
   }
 }

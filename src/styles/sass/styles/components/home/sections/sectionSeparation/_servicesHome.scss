@@ -1,0 +1,31 @@
+@use "../../../../../variables/var";
+
+.background-services {
+  background: linear-gradient(to left, #f9fbd3, #c6fefc);
+  & .home__container {
+    &--cards {
+      & .card {
+        &__info {
+          position: relative;
+          padding-bottom: 3rem;
+
+          & p {
+            font-weight: bold;
+          }
+          & button {
+            background-color: var.$cl-primary3;
+            color: #fff;
+            border: none;
+            padding: 4px 15px;
+            border-radius: 20px;
+            position: absolute;
+            right: 1rem;
+            bottom: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
