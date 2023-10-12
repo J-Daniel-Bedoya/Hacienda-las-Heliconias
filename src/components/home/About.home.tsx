@@ -11,7 +11,12 @@ const AboutHome = () => {
         </div>
         <div className="home__container--cards">
           {homeJson.about.map((about, index) => (
-            <div key={index} className="card">
+            <div
+              key={index}
+              className={`card ${
+                index === 1 || index === 3 ? "card-reverse" : ""
+              }`}
+            >
               <div className="card__img">
                 <img src={imgAbout} alt={about.img} />
               </div>
