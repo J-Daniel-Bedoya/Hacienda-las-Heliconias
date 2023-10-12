@@ -286,7 +286,7 @@
 .home__ported--img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 @media screen and (width >= 768px) {
@@ -427,6 +427,7 @@
   justify-content: start;
   align-items: start;
 }
+
 @media screen and (width >= 800px) {
   .background-about .home__container--title h2 {
     font-size: 2rem;

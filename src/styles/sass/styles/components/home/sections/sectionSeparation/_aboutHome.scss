@@ -10,23 +10,23 @@
           display: flex;
           justify-content: start;
           align-items: start;
-          & p {
-          }
+          //   & p {
+          //   }
         }
-        &__img {
-          & img {
-          }
-        }
+        // &__img {
+        //   & img {
+        //   }
+        // }
       }
 
-      & .card-reverse {
-        & .card__info {
-        }
-        & .card__img {
-          & img {
-          }
-        }
-      }
+      //   & .card-reverse {
+      //     & .card__info {
+      //     }
+      //     & .card__img {
+      //       & img {
+      //       }
+      //     }
+      //   }
     }
   }
 }
